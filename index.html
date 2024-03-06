@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <header class="profile container">
+        <i class="ri-moon-line change_theme" id="theme-button"></i>
+
+        <div class="profile_container grid">
+            <div class="profile_data">
+                <div class="profile_border">
+                    <div class="profile_perfil">
+                        <img src="assets/img/foto_perfil.jpg" alt="Foto de Perfil">
+                    </div>
+                </div>
+
+                <h2 class="profile_name">Ezequiel Henrique</h2>
+                <h3 class="profile_profession">Desenvolvedor Backend</h3>
+
+                <ul class="profile_social">
+                    <a href="https://www.linkedin.com/in/ezequielhenrique" target="_blank" class="profile_social_link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/ezequielhenrique" target="_blank" class="profile_social_link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters_content">
+                <button class="filters_button filter-tab-active" data-target="#projects">
+                    Projetos
+                </button>
+                <button class="filters_button" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+                <!--=============== PROJECTS ===============-->
+                <div class="projects_content grid filters_active" data-content id="projects">
+                    <article class="project_card">
+                        <img src="assets/img/site_decodificador_texto.png" alt="" class="project_img">
+                        <div class="project_modal">
+                            <div>
+                                <span class="project_subtitle">Web</span>
+                                <h3 class="project_title">Decodificador de Textos</h3>
+                                <a href="https://ezequielhenrique.github.io/decodificador-de-textos/" target="_blank" class="project_button button button_small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project_card">
+                        <img src="assets/img/site_page_404.png" alt="" class="project_img">
+                        <div class="project_modal">
+                            <div>
+                                <span class="project_subtitle">Web</span>
+                                <h3 class="project_title">Template página 404</h3>
+                                <a href="https://ezequielhenrique.github.io/template-pagina-404/" target="_blank" class="project_button button button_small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!--=============== SKILLS ===============-->
+                <div class="skills_content grid" data-content id="skills">
+                    <div class="skills_area">
+                        <h3 class="skills_title">Linguagens e Tecnologias</h3>
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="devicon-html5-plain"></i>
+                                    <div>
+                                        <h3 class="skills_name">HTML</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="devicon-css3-plain"></i>
+                                    <div>
+                                        <h3 class="skills_name">CSS</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="devicon-javascript-plain"></i>
+                                    <div>
+                                        <h3 class="skills_name">JavaScript</h3>
+                                    </div>
+                                </div>
+    
+                                <div class="skills_data">
+                                    <i class="devicon-python-plain"></i>
+                                    <div>
+                                        <h3 class="skills_name">Python</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="devicon-java-plain"></i>
+                                    <div>
+                                        <h3 class="skills_name">Java</h3>
+                                    </div>
+                                </div>
+    
+                                <div class="skills_data">
+                                    <i class="devicon-spring-original"></i>
+                                    <div>
+                                        <h3 class="skills_name">Spring Boot</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="devicon-mysql-original"></i>
+                                    <div>
+                                        <h3 class="skills_name">MySQL</h3>
+                                    </div>
+                                </div>
+    
+                                <div class="skills_data">
+                                    <i class="devicon-postgresql-plain"></i>
+                                    <div>
+                                        <h3 class="skills_name">PostgreSQL</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <span class="footer_copy">&#169; Ezequiel Henrique</span>
+    </footer>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
