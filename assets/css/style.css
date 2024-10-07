@@ -150,9 +150,6 @@ body.dark-theme {
 .profile_perfil {
     width: 100px;
     height: 100px;
-    /*background: linear-gradient(180deg, 
-                hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
-                hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%);*/
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -193,7 +190,7 @@ body.dark-theme {
 }
 
 .profile_social_link {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--title-color);
     transition: .3s;
 }
@@ -261,49 +258,55 @@ body.dark-theme {
 /*=============== PROJECTS ===============*/
 .project_card {
     position: relative;
+    border: 1px solid var(--first-color);
     border-radius: 1rem;
     overflow: hidden;
 }
 
 .project_card img {
-    width: 100%;
-    height: 100%;
+    height: 10rem;
 }
 
-.project_modal {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: -100%;
-    left: 0;
-    background: linear-gradient(180deg,
-                hsla(var(--hue), 0%, 40%, .3) 0%,
-                hsla(var(--hue), 0%, 17%, 1) 95%);
-    display: grid;
-    align-items: flex-end;
-    padding: 1.5rem 1.25rem;
-    transition: .3s;
-}
-
-.project_subtitle, .project_title {
-    color: #fff;
-}
-
-.project_subtitle {
+.badge {
+    padding: 0.1rem 0.7rem;
+    border-radius: 0.5rem;
     font-size: var(--smaller-font-size);
+    font-weight: bold;
+}
+
+.card_content {
+    padding: 1.5rem 1.25rem;
+}
+
+.badge_javascript {
+    background-color: #F7DF1E;
+    color: black;
+}
+
+.badge_html {
+    background-color: #E34F26;
+    color: black;
+}
+
+.badge_css {
+    background-color: #1572B6;
+    color: black;
 }
 
 .project_title {
     font-size: var(--h3-font-size);
+    margin-top: .75rem;
     margin-bottom: .75rem;
 }
 
-.projects_button {
-    padding: .5rem;
+.project_description {
+    font-size: var(--small-font-size);
+    
 }
 
-.project_card:hover .project_modal {
-    bottom: 0;
+.project_button {
+    margin-top: 1rem;
+    padding: .5rem;
 }
 
 /*=============== SKILLS ===============*/
