@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-  --title-font: "Poppins", sans-serif;
-  --text-font: "Inter", sans-serif;
+  --text-font: "Ubuntu", sans-serif;
+  --code-font: "IBM Plex Mono", monospace;
 
-  --color-primary: #05F2DB;         /* Destaque principal */
-  --color-accent-warm: #FF6F61;     /* Contraste quente */
-  --color-accent-cool: #003F5C;     /* Toque frio */
+  --color-brand-1: #12F7D6; /*#05F2DB; */        /* Destaque principal */
+  --color-brand-2: #98FAEC;
+  --color-grey: #43454D;     /* Contraste quente */
 
-  --color-bg-primary: #0A0F0F;      /* Fundo principal */
-  --color-bg-secondary: #1A1F1F;    /* Fundo de seções */
+  --color-bg-primary: #292F36;      /* Fundo principal */
+  --color-bg-secondary: #1A1E23;    /* Fundo de seções */
 
   --color-text-primary: #E6E6E6;    /* Texto principal */
-  --color-text-secondary: #A0A0A0;  /* Texto secundário */
+  --color-text-secondary: #43454D;  /* Texto secundário */
 }
 
 * {
@@ -23,4 +23,6 @@
 
 body {
   background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--text-font);
 }
