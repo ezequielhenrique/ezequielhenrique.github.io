@@ -26,3 +26,71 @@ body {
   color: var(--color-text-primary);
   font-family: var(--text-font);
 }
+
+.bg-text-U {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.h1-U {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.h2-U {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.button-U {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* Article U */
+.para-U {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.label-U-m {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.label-U-l {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.number-M {
+  font-family: var(--code-font);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+/* logo-M */
+.h2-M {
+  font-family: var(--code-font);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.menu-M {
+  font-family: var(--code-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* media-M */
+.para-M {
+  font-family: var(--code-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.code-M {
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
