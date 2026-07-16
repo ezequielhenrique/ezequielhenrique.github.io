@@ -7,6 +7,9 @@ import Contact from './pages/Contact/Contact';
 import Header from './components/Header/Header';
 import './App.css';
 
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 function App() {
 
   return (
@@ -21,6 +24,11 @@ function App() {
           <Works/>
           <Contact/>
         </main>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/ezequielhenrique/" target='_blank' className="social-link para-M"><FaLinkedin className='social-icon'/> LinkedIn</a>
+          <a href="https://github.com/ezequielhenrique/" target='_blank' className="social-link para-M"><FaGithub className='social-icon'/> Github</a>
+        </footer>
 
       </div>
     </>

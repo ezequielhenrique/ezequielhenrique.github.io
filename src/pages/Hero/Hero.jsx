@@ -1,80 +1,90 @@
-import React from "react";
-import ProfilePhoto from '../../assets/profile-photo.png';
-import { MdOutlineEmail } from "react-icons/md";
-import { IoIosLink } from "react-icons/io";
-import { BsBriefcase, BsGeoAlt, BsDownload } from "react-icons/bs";
 import './Hero.css';
+import profileImage from '../../assets/profile-cropped.png'
 
 function Hero() {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <section className="main-page">
+    <section className="hero" id="hero">
+      <div className="hero-content">
+        <span className="hero-overline">
+          // SOFTWARE DEVELOPER
+        </span>
 
-      <h1 className="main-page-title bg-text-U">Desenvolvedor</h1>
+        <h1 className="hero-title">
+          Olá, eu sou
+          <span>Ezequiel Henrique</span>
+        </h1>
 
-      <div className="main-page-container">
+        <h2 className="hero-subtitle">
+          Desenvolvedor Full Stack
+        </h2>
 
-        {/* Card da Esquerda */}
-        <div className="main-left-card">
+        <p className="hero-description">
+          Desenvolvo APIs, automações e aplicações web utilizando Python,
+          FastAPI, Django e React.
+        </p>
 
-          <img src={ProfilePhoto} alt="Foto de perfil" className="profile-img"/>
-          <h2 className="profile-name">Ezequiel</h2>
-          <p className="profile-info code-M">Desenvolvedor FullStack</p>
+        <div className="hero-actions">
+          <button
+            className="hero-button hero-button-primary"
+            onClick={() => scrollToSection('works')}
+          >
+            Ver projetos
+            <span>↗</span>
+          </button>
 
-          <div className="profile-details code-M">
-            <p><MdOutlineEmail className="social-icon"/> ezequielhenriquemelo@gmail.com</p>
-            <p><BsGeoAlt className="social-icon"/> Pernambuco</p>
-            <p><BsBriefcase className="social-icon"/> Full-time / Freelancer</p>
-            <p><IoIosLink  className="social-icon"/> ezequielhenrique.github.io</p>
-          </div>
-
-          <div className="profile-techs code-M">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-            <span>REACT</span>
-          </div>
-
-          <button className="dowload-cv-button button-U">
-            Download CV <BsDownload/>
+          <button
+            className="hero-button hero-button-secondary"
+            onClick={() => scrollToSection('contact')}
+          >
+            Entre em contato
+            <span>↗</span>
           </button>
         </div>
 
-        {/* Informações Centrais */}
-        <div className="main-central-card">
+        <div className="hero-technologies">
+          <span>Python</span>
+          <span>·</span>
+          <span>FastAPI</span>
+          <span>·</span>
+          <span>Django</span>
+          <span>·</span>
+          <span>React</span>
+        </div>
+      </div>
 
-          <span className="html-tag code-M">&lt;h1&gt;</span>
-          <h2 className="central-content central-title h1-U">
-              Olá <br/> Eu sou <span>Ezequiel</span>, <br /> Desenvolvedor FullStack
-          </h2>
-          <span className="html-tag code-M">&lt;/h1&gt;</span>
-
-          <span className="html-tag code-M">&lt;p&gt;</span>
-            <p className="central-content para-U">
-              Ajudo empresas a crescer criando experiências web modernas e eficientes. Se você busca um desenvolvedor que entrega resultados de verdade, pode contar comigo.
-            </p>
-          <span className="html-tag code-M">&lt;/p&gt;</span>
-
-          <button className="central-content central-button h2-M">
-            Vamos Conversar <MdOutlineEmail className="central-button-icon"/>
-          </button>
+      <div className="hero-visual">
+        <div className="hero-visual-label">
+          <span className="hero-status-dot"></span>
+          <span>available_for_work</span>
         </div>
 
-        {/* Right Stats */}
-        <div className="main-right">
-          <div className="main-right-card">
-            <div className="right-content">
-              <p className="right-content-number number-M">4</p>
-              <p className="para-M">Programming <br/>Languages</p>
-            </div>
-            <div className="right-content">
-              <p className="right-content-number number-M">6</p>
-              <p className="para-M">Development <br/>Tools</p>
-            </div>
-            <div className="right-content">
-              <p className="right-content-number number-M">8</p>
-              <p className="para-M">Years of <br/>Experience</p>
-            </div>
-            </div>
+        <div className="hero-image-wrapper">
+          <div className="hero-image-background"></div>
+
+          <img
+            src={profileImage}
+            alt="Ezequiel Henrique"
+            className="hero-image"
+          />
+
+          <span className="hero-code-decoration code-top">
+            {'<dev />'}
+          </span>
+
+          <span className="hero-code-decoration code-bottom">
+            01 / 01
+          </span>
+        </div>
+
+        <div className="hero-visual-footer">
+          <span>based_in_brazil</span>
+          <span>+</span>
         </div>
       </div>
     </section>

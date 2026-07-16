@@ -1,5 +1,6 @@
 @import url('index.css');
 
 .container {
-  padding: 1rem 5rem;
+  width: min(100% - 4rem, 1280px);
+  margin: 0 auto;
 }

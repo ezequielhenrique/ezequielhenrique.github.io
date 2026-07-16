@@ -1,19 +1,21 @@
 import { useState } from 'react';
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+
 import './Header.css';
 
 function Header() {
 
   return (
     <header>
-      <h1 className="h2-M portfolio-name"><span>&lt;E/&gt;</span> EzequielHenrique</h1>
+      <a href="#hero" className="portfolio-name">
+        <span>&lt;E/&gt;</span> EzequielHenrique
+      </a>
 
-      <nav>
-        <a href="#home" className='menu-M'>Home</a>
-        <a href="#blogs" className='menu-M'>Blogs</a>
-        <a href="https://www.linkedin.com/in/ezequielhenrique/" target='_blank' className="social-link para-M"><FaLinkedin className='social-icon'/> LinkedIn</a>
-        <a href="https://github.com/ezequielhenrique/" target='_blank' className="social-link para-M"><FaGithub className='social-icon'/> Github</a>
+      <nav className='header-nav'>
+        <a href="#home" className='header-link active'>Home</a>
+        <a href="#about" className='header-link'>Sobre mim</a>
+        <a href="#skills" className='header-link'>Skills</a>
+        <a href="#works" className='header-link'>Projetos</a>
+        <a href="#contact" className='header-link'>Contato</a>
       </nav>
     </header>
   )
