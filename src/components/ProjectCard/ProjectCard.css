@@ -1,0 +1,196 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+
+  min-height: 450px;
+
+  padding: 1.5rem;
+
+  border: 1px solid var(--color-grey);
+
+  background-color: var(--color-bg-secondary);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.project-image-container {
+  position: relative;
+
+  min-height: 400px;
+
+  overflow: hidden;
+
+  background-color: var(--color-bg-primary);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.03);
+}
+
+.project-number {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  padding: 0.4rem 0.6rem;
+
+  background-color: var(--color-bg-primary);
+
+  font-family: var(--code-font);
+  font-size: 0.7rem;
+
+  color: var(--color-brand-1);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1rem 1rem 1rem 0;
+}
+
+.project-category {
+  margin-bottom: 1rem;
+
+  font-family: var(--code-font);
+  font-size: 0.7rem;
+
+  color: var(--color-brand-1);
+}
+
+.project-title {
+  margin-bottom: 1.5rem;
+
+  font-family: var(--code-font);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 500;
+
+  color: var(--color-text-primary);
+}
+
+.project-description {
+  max-width: 500px;
+
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+
+  color: var(--color-text-primary);
+  opacity: 0.75;
+}
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+
+  margin-top: 2rem;
+}
+
+.project-technology {
+  padding: 0.45rem 0.7rem;
+
+  border: 1px solid var(--color-brand-1);
+
+  font-family: var(--code-font);
+  font-size: 0.7rem;
+
+  color: var(--color-brand-1);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding-bottom: 0.4rem;
+
+  border-bottom: 1px solid var(--color-brand-1);
+
+  font-family: var(--code-font);
+  font-size: 0.8rem;
+
+  text-decoration: none;
+
+  color: var(--color-text-primary);
+
+  transition: color 0.3s ease;
+}
+
+.project-link span {
+  color: var(--color-brand-1);
+}
+
+.project-link:hover {
+  color: var(--color-brand-1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-image-container {
+    min-height: 300px;
+  }
+
+  .project-content {
+    padding: 0 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-image-container {
+    min-height: 220px;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}

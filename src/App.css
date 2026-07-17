@@ -1,0 +1,6 @@
+@import url('index.css');
+
+.container {
+  width: min(100% - 4rem, 1280px);
+  margin: 0 auto;
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+  --text-font: "Ubuntu", sans-serif;
+  --code-font: "IBM Plex Mono", monospace;
+
+  --color-brand-1: #07F2C7; /* Destaque principal */
+  --color-brand-2: #0ABF9E;
+  --color-grey: #43454D;     /* Contraste quente */
+
+  --color-bg-primary: #090A0D;      /* Fundo principal */
+  --color-bg-secondary: #1A1E23;    /* Fundo de seções */
+
+  --color-text-primary: #E6E6E6;    /* Texto principal */
+  --color-text-secondary: #43454D;  /* Texto secundário */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--text-font);
+}
+
+.bg-text-U {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.h1-U {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.h2-U {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.button-U {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* Article U */
+.para-U {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.label-U-m {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.label-U-l {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.number-M {
+  font-family: var(--code-font);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+/* logo-M */
+.h2-M {
+  font-family: var(--code-font);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.menu-M {
+  font-family: var(--code-font);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* media-M */
+.para-M {
+  font-family: var(--code-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.code-M {
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
