@@ -5,6 +5,8 @@ import Skills from './pages/Skills/Skills';
 import Works from './pages/Works/Works';
 import Contact from './pages/Contact/Contact';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
 import './App.css';
 
 import { FaLinkedin } from "react-icons/fa";
@@ -16,7 +18,6 @@ function App() {
     <>
       <div className="container">
         <Header/>
-        
         <main>
           <Hero/>
           <AboutMe/>
@@ -24,12 +25,7 @@ function App() {
           <Works/>
           <Contact/>
         </main>
-
-        <footer>
-          <a href="https://www.linkedin.com/in/ezequielhenrique/" target='_blank' className="social-link para-M"><FaLinkedin className='social-icon'/> LinkedIn</a>
-          <a href="https://github.com/ezequielhenrique/" target='_blank' className="social-link para-M"><FaGithub className='social-icon'/> Github</a>
-        </footer>
-
+        <Footer/>
       </div>
     </>
   )
