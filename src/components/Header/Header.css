@@ -1,13 +1,18 @@
-header {
+.header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
   min-height: 80px;
+
   border-bottom: 1px solid var(--color-grey);
 }
 
 .portfolio-name {
+  position: relative;
+  z-index: 10;
+
   font-family: var(--code-font);
   font-size: 1.4rem;
   font-weight: 500;
@@ -64,4 +69,122 @@ header {
   height: 1px;
 
   background-color: var(--color-brand-1);
+}
+
+/* =========================
+   MENU TOGGLE
+========================= */
+
+.menu-toggle {
+  display: none;
+
+  position: relative;
+  z-index: 10;
+
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid var(--color-grey);
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+
+  width: 18px;
+  height: 1px;
+
+  margin: 0 auto;
+
+  background-color: var(--color-text-primary);
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  border-color: var(--color-brand-1);
+}
+
+.menu-toggle:hover span {
+  background-color: var(--color-brand-1);
+}
+
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header-nav {
+    position: absolute;
+    z-index: 5;
+
+    top: 80px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    width: 100%;
+
+    padding: 1rem 0;
+
+    border: 1px solid var(--color-grey);
+    border-top: none;
+
+    background-color: var(--color-bg-primary);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .header-nav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .header-link {
+    padding: 1rem 1.5rem;
+
+    font-size: 0.85rem;
+  }
+
+  .header-link.active::after {
+    display: none;
+  }
+
+  .header-link:hover {
+    padding-left: 2rem;
+
+    background-color: var(--color-bg-secondary);
+  }
 }
