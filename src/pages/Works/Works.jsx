@@ -4,6 +4,7 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 import geocriterioImage from '../../assets/projects/geocriterio.png';
 import emprestimoImage from '../../assets/projects/emprestimo.png';
+import previsaoTempoImage from '../../assets/projects/previsao-tempo.png';
 import flappyBirdImage from '../../assets/projects/flappy-bird.png';
 import calculadoraImage from '../../assets/projects/calculadora.png';
 import quadroImage from '../../assets/projects/quadro.png';
@@ -38,6 +39,17 @@ function Works() {
     },
     {
       id: 3,
+      title: 'Previsão do Tempo',
+      category: 'WEB APPLICATION / REACT',
+      description:
+        'Aplicação web em React para consulta da previsão do tempo em tempo real, com informações climáticas e mapa interativo.',
+      image: previsaoTempoImage,
+      technologies: ['JavasScript', 'React', 'OpenWeatherMap API', 'Leaflet'],
+      github: 'https://github.com/ezequielhenrique/previsao-do-tempo',
+      demo: 'https://previsao-do-tempo-orcin-ten.vercel.app/',
+    },
+    {
+      id: 4,
       title: 'Flappy Bird',
       category: 'FRONTEND / JAVASCRIPT',
       description:
@@ -48,7 +60,7 @@ function Works() {
       demo: 'https://ezequielhenrique.github.io/Flappy-Bird/',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Calculadora de Juros Compostos',
       category: 'FRONTEND / JAVASCRIPT',
       description:
@@ -59,7 +71,7 @@ function Works() {
       demo: 'https://ezequielhenrique.github.io/calculadora-juros-compostos/',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Etch-a-sketch',
       category: 'FRONTEND / JAVASCRIPT',
       description:
@@ -70,7 +82,7 @@ function Works() {
       demo: 'https://ezequielhenrique.github.io/etch-a-sketch/',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Decodificador de Textos',
       category: 'FRONTEND / JAVASCRIPT',
       description:
@@ -81,7 +93,7 @@ function Works() {
       demo: 'https://ezequielhenrique.github.io/decodificador-de-textos/',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Template página 404',
       category: 'FRONTEND / JAVASCRIPT',
       description:
